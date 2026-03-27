@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Judge</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>Judge Panel</h1>
+
+<select id="judge">
+  <option>J1</option>
+  <option>J2</option>
+  <option>J3</option>
+</select>
+
+<div id="scores"></div>
+
+<script src="app.js"></script>
+
+<script>
+for (let i = 1; i <= 10; i++) {
+  const btn = document.createElement("button");
+  btn.innerText = i;
+  btn.onclick = () => sendScore(i);
+  document.getElementById("scores").appendChild(btn);
+}
+</script>
+
+</body>
+</html>

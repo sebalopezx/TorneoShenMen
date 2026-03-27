@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Organizer</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<h1>Organizer</h1>
+
+<select id="tatami">
+  <option value="1">Tatami 1</option>
+  <option value="2">Tatami 2</option>
+  <option value="3">Tatami 3</option>
+</select>
+
+<input id="competitor" placeholder="Competitor (A01)">
+<input id="category" placeholder="Category">
+
+<br><br>
+
+
+<button onclick="iniciarCronometro()">Start</button>
+<button onclick="pausarCronometro()">Pause</button>
+<button onclick="reiniciarCronometro()">Reset</button>
+
+<h2 id="cronometro">75</h2>
+
+<script src="../js/app.js"></script>
+<script src="../js/cronometro.js"></script>
+</body>
+</html>

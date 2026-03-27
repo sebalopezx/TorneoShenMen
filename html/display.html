@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<h1 id="category">Categoría</h1>
+<h2 id="competitor">Competidor</h2>
+
+<h1 id="tiempo">75</h1>
+
+<div id="scores"></div>
+
+<script src="js/app.js"></script>
+<script src="js/display.js"></script>
+
+<script>
+  // Espera a que cargue todo el DOM
+  window.onload = () => {
+    setInterval(loadDisplay, 1000);
+  };
+</script>
+
+</body>
+</html>
