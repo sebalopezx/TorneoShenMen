@@ -8,6 +8,7 @@ let tiempoRestante = duracionInicial;
 let intervalo = null;
 let tatami = 1;
 
+// Guarda tiempo de cronometro en localstorage
 function guardarTiempo() {
   localStorage.setItem(`tatami_${tatami}_tiempo`, tiempoRestante);
 }
@@ -47,6 +48,7 @@ function reiniciarCronometro() {
   detenerCronometro();
   tiempoRestante = duracionInicial;
   actualizarUI();
+  guardarTiempo();
 }
 
 // Función interna para limpiar intervalo
